@@ -1,0 +1,16 @@
+{% extends "base.html" %} 
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+ <h1>This is the home page.<h1>
+    <h4>Welcome to the home page of the course</h4>
+     <h3>
+        <ul>
+            <li>Course: {{ course }} </li>
+        </ul>
+     </h3>
+   
+    <h1> Click this link <a href="{% url 'about' %}"> About</a> to redirect to the about page.</h1>
+ 
+{% endblock content %}
